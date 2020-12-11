@@ -2,8 +2,8 @@
   <div class="layout">
     <input type="file" ref="imgUpload" name="pic" accept="image/*" @change="handleChange">
     <div>
-      <el-button type="primary" size="mini" @click="handleUpload">上传图片</el-button>
-      <span class="pic-name">dfefreji.jpg{{imgName}}</span>
+      <el-button type="primary" size="mini" @click="handleUpload">选择图片</el-button>
+      <span class="pic-name">{{imgName}}</span>
     </div>
   </div>
 </template>
@@ -37,6 +37,8 @@ input{
   display:none;
 }
 .pic-name{
+  font-size: 14px;
+  color: #999;
   padding-left: 10px;
 }
 }  
